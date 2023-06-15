@@ -1,0 +1,269 @@
+{
+  "id": "404a650c-718a-4367-88cc-e507e553adea",
+  "version": "2.0",
+  "name": "Parabank",
+  "url": "https://parabank.parasoft.com",
+  "tests": [{
+    "id": "c3cbacc1-cab2-47a3-b374-40dd9ca13de7",
+    "name": "Registeration",
+    "commands": [{
+      "id": "04331e93-2b99-4364-8412-1b283f452c75",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.floor(Math.random()*1000)",
+      "targets": [],
+      "value": "num"
+    }, {
+      "id": "2b2b8e5c-e1e8-41e0-82bd-aaa9b53c4789",
+      "comment": "",
+      "command": "open",
+      "target": "/parabank/index.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edccbb33-cdf2-43fd-8e89-fa7e04a7c51c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23129475-d7e8-4584-8dc0-0cc6f3fce73b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//div[@id='loginPanel']/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'register.htm')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8856578-99cb-430e-825b-14cb512e9525",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.firstName",
+      "targets": [
+        ["id=customer.firstName", "id"],
+        ["name=customer.firstName", "name"],
+        ["css=#customer\\.firstName", "css:finder"],
+        ["xpath=//input[@id='customer.firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "dfsdgfdh"
+    }, {
+      "id": "c0188404-d0bf-471b-9892-00f0a389c858",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.lastName",
+      "targets": [
+        ["id=customer.lastName", "id"],
+        ["name=customer.lastName", "name"],
+        ["css=#customer\\.lastName", "css:finder"],
+        ["xpath=//input[@id='customer.lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "fdhfgjutyi"
+    }, {
+      "id": "51f704b2-fbc2-43fc-ba82-ae32ef025454",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.address.street",
+      "targets": [
+        ["id=customer.address.street", "id"],
+        ["name=customer.address.street", "name"],
+        ["css=#customer\\.address\\.street", "css:finder"],
+        ["xpath=//input[@id='customer.address.street']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "2435 dsgdfh"
+    }, {
+      "id": "900ecce5-e0e1-407c-b7d3-0004e0dc2262",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.address.city",
+      "targets": [
+        ["id=customer.address.city", "id"],
+        ["name=customer.address.city", "name"],
+        ["css=#customer\\.address\\.city", "css:finder"],
+        ["xpath=//input[@id='customer.address.city']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "reydtgik"
+    }, {
+      "id": "a503b4d6-895e-4559-811b-8b70d0d5644a",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.address.state",
+      "targets": [
+        ["id=customer.address.state", "id"],
+        ["name=customer.address.state", "name"],
+        ["css=#customer\\.address\\.state", "css:finder"],
+        ["xpath=//input[@id='customer.address.state']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "seruyuit"
+    }, {
+      "id": "6d370bcf-6a39-4f8b-90e2-8f50882dd86d",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.address.zipCode",
+      "targets": [
+        ["id=customer.address.zipCode", "id"],
+        ["name=customer.address.zipCode", "name"],
+        ["css=#customer\\.address\\.zipCode", "css:finder"],
+        ["xpath=//input[@id='customer.address.zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "aa8696eb-da53-4b1f-be70-14978f24092d",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.phoneNumber",
+      "targets": [
+        ["id=customer.phoneNumber", "id"],
+        ["name=customer.phoneNumber", "name"],
+        ["css=#customer\\.phoneNumber", "css:finder"],
+        ["xpath=//input[@id='customer.phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "098765443322"
+    }, {
+      "id": "bcf5e2d6-6d2c-4e8d-af5a-16a2af2fa0c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.ssn",
+      "targets": [
+        ["id=customer.ssn", "id"],
+        ["name=customer.ssn", "name"],
+        ["css=#customer\\.ssn", "css:finder"],
+        ["xpath=//input[@id='customer.ssn']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[8]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "dc639e5d-7da6-413a-8344-30a08665d900",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.username",
+      "targets": [
+        ["id=customer.username", "id"],
+        ["name=customer.username", "name"],
+        ["css=#customer\\.username", "css:finder"],
+        ["xpath=//input[@id='customer.username']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[10]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": "French${num}"
+    }, {
+      "id": "1ba10541-f6d6-44a1-acfc-ed92d0077d84",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer.password",
+      "targets": [
+        ["id=customer.password", "id"],
+        ["name=customer.password", "name"],
+        ["css=#customer\\.password", "css:finder"],
+        ["xpath=//input[@id='customer.password']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[11]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password01"
+    }, {
+      "id": "c09fdb8f-40a6-436e-b601-95d98ce62bad",
+      "comment": "",
+      "command": "type",
+      "target": "id=repeatedPassword",
+      "targets": [
+        ["id=repeatedPassword", "id"],
+        ["name=repeatedPassword", "name"],
+        ["css=#repeatedPassword", "css:finder"],
+        ["xpath=//input[@id='repeatedPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[12]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[12]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password01"
+    }, {
+      "id": "1674a758-fd5b-4416-bb74-538ebc18fca3",
+      "comment": "",
+      "command": "click",
+      "target": "css=td > .button",
+      "targets": [
+        ["css=td > .button", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[13]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92f6196d-c0e3-4ab6-ab44-50beda05994e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title",
+      "targets": [
+        ["css=.title", "css:finder"],
+        ["xpath=//div[@id='rightPanel']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome joekannan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4742a77-84ba-492a-a87e-a73fb5a38481",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.title",
+      "targets": [
+        ["css=.title", "css:finder"],
+        ["xpath=//div[@id='rightPanel']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome joekannan')]", "xpath:innerText"]
+      ],
+      "value": "Welcome French${num}"
+    }, {
+      "id": "a04205ed-1740-4f41-807f-37c6133b9383",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=ul:nth-child(3) > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='leftPanel']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/parabank/logout.htm')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fac6055-a9dd-4ca6-9921-32d86aa0835a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56d44f8c-6017-4d9f-82a6-a92d672d5b6d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3cbacc1-cab2-47a3-b374-40dd9ca13de7"]
+  }],
+  "urls": ["https://parabank.parasoft.com/"],
+  "plugins": []
+}
